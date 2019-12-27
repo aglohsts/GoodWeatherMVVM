@@ -74,10 +74,40 @@
                     <view key="view" contentMode="scaleToFill" id="jiq-Ag-tb2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YHJ-Oa-L5L">
+                                <rect key="frame" x="20" y="76" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgs-Vc-1Ft">
+                                <rect key="frame" x="190" y="156" width="34" height="30"/>
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="saveCityButtonPressed" destination="kP8-jA-sb5" eventType="touchUpInside" id="Phk-gQ-yrZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pNa-Yy-769" firstAttribute="trailing" secondItem="YHJ-Oa-L5L" secondAttribute="trailing" constant="20" id="52r-tX-btY"/>
+                            <constraint firstItem="YHJ-Oa-L5L" firstAttribute="leading" secondItem="pNa-Yy-769" secondAttribute="leading" constant="20" id="lvs-kS-tq5"/>
+                            <constraint firstItem="jgs-Vc-1Ft" firstAttribute="top" secondItem="YHJ-Oa-L5L" secondAttribute="bottom" constant="46" id="mIf-8F-TOL"/>
+                            <constraint firstItem="YHJ-Oa-L5L" firstAttribute="top" secondItem="pNa-Yy-769" secondAttribute="top" constant="20" id="r5Y-n7-jzg"/>
+                            <constraint firstItem="jgs-Vc-1Ft" firstAttribute="centerX" secondItem="jiq-Ag-tb2" secondAttribute="centerX" id="uER-Dq-fWO"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="pNa-Yy-769"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add City" id="G4G-pm-ppR"/>
+                    <navigationItem key="navigationItem" title="Add City" id="G4G-pm-ppR">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="mhf-5C-txM">
+                            <connections>
+                                <action selector="close" destination="kP8-jA-sb5" id="Irf-MH-flh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="cityNameTextField" destination="YHJ-Oa-L5L" id="bpp-Kn-OOY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YGg-v6-Z9v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
