@@ -16,13 +16,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="HAz-S2-Hkh">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="WeatherTableViewCell" rowHeight="100" id="HAz-S2-Hkh" customClass="WeatherTableViewCell" customModule="GoodWeatherMVVM" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HAz-S2-Hkh" id="lGD-V0-eeF">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1bJ-v7-TlN">
+                                            <rect key="frame" x="20" y="37" width="52.5" height="26.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qxp-zb-Fho">
+                                            <rect key="frame" x="323" y="32" width="71" height="36"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1bJ-v7-TlN" firstAttribute="leading" secondItem="lGD-V0-eeF" secondAttribute="leadingMargin" id="2gd-iU-HoY"/>
+                                        <constraint firstItem="1bJ-v7-TlN" firstAttribute="centerY" secondItem="lGD-V0-eeF" secondAttribute="centerY" id="GTb-RX-O83"/>
+                                        <constraint firstItem="qxp-zb-Fho" firstAttribute="centerY" secondItem="lGD-V0-eeF" secondAttribute="centerY" id="RCM-TO-whN"/>
+                                        <constraint firstItem="qxp-zb-Fho" firstAttribute="trailing" secondItem="lGD-V0-eeF" secondAttribute="trailingMargin" id="Z9P-F3-bNK"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="cityNameLabel" destination="1bJ-v7-TlN" id="KfQ-z3-ur8"/>
+                                    <outlet property="temperatureLabel" destination="qxp-zb-Fho" id="YxO-2z-7zp"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
