@@ -51,9 +51,7 @@ class WeatherListTableViewController: UITableViewController {
         
         guard let weatherTableViewCell = cell as? WeatherTableViewCell else { return cell }
         
-        weatherTableViewCell.cityNameLabel.text = weatherVM.name
-        
-        weatherTableViewCell.temperatureLabel.text = "\(weatherVM.currentTemperature.temperature)°"
+        weatherTableViewCell.configure(weatherVM)
         
         return cell
     }
