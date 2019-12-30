@@ -11,6 +11,11 @@ import UIKit
 
 class WeatherListTableViewController: UITableViewController {
     
+    private struct Segue {
+        static let settings = "SettingsTableViewControllerSegue"
+        static let addWeatherCity = "AddWeatherCityTableViewControllerSegue"
+    }
+    
     private var weatherListViewModel = WeatherListViewModel()
     
     override func viewDidLoad() {
@@ -21,6 +26,18 @@ class WeatherListTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
+        switch segue.identifier {
+            
+        case Segue.settings: prepareSegueForAddWeatherCityViewController(segue: segue)
+            
+        case Segue.addWeatherCity: prepareSegueForAddWeatherCityViewController(segue: segue)
+            
+        default: return
+        }
+    }
+    
+    private func prepareSegueForAddWeatherCityViewController(segue: UIStoryboardSegue) {
+        
         guard let navController = segue.destination as? UINavigationController else { fatalError("NavigationControll not found") }
         
         guard let addWeatherCityVC = navController.viewControllers.first as? AddWeatherCityViewController else {
@@ -28,6 +45,11 @@ class WeatherListTableViewController: UITableViewController {
         }
         
         addWeatherCityVC.delegate = self
+    }
+    
+    private func prepareSegueForSettingsViewController(segue: UIStoryboardSegue) {
+        
+        guard let navController = segue.destination as? UINavigationController else { fatalError("NavigationControll not found") }
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
