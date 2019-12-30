@@ -10,7 +10,7 @@ import Foundation
 
 extension Double {
     
-    var formatAsString: String {
+    var formatAsDegree: String {
         
         return String(format: "%.0f°", self)
     }
