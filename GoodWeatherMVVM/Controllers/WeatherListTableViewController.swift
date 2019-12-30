@@ -28,7 +28,7 @@ class WeatherListTableViewController: UITableViewController {
         
         switch segue.identifier {
             
-        case Segue.settings: prepareSegueForAddWeatherCityViewController(segue: segue)
+        case Segue.settings: prepareSegueForSettingsViewController(segue: segue)
             
         case Segue.addWeatherCity: prepareSegueForAddWeatherCityViewController(segue: segue)
             
