@@ -17,6 +17,30 @@ class SettingsTableViewController: UITableViewController {
         super.viewDidLoad()
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+        
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        // uncheck all cells
+        tableView.visibleCells.forEach { (cell) in
+            cell.accessoryType = .none
+        }
+        
+        if let cell = tableView.cellForRow(at: indexPath) {
+            cell.accessoryType = .checkmark
+            
+            let unit = Unit.allCases[indexPath.row]
+            self.settingsViewModel.selectedUnit = unit
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        
+        if let cell = tableView.cellForRow(at: indexPath) {
+            cell.accessoryType = .none
+        }
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -34,6 +58,11 @@ class SettingsTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath)
         
         cell.textLabel?.text = settingsItem.displayName
+        
+        if settingsItem == self.settingsViewModel.selectedUnit {
+            
+            cell.accessoryType = .checkmark
+        }
         
         return cell
     }
