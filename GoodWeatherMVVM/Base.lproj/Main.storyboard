@@ -57,12 +57,12 @@
                     <navigationItem key="navigationItem" title="GoodWeather" id="rjD-wJ-Dvt">
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="mSz-JE-Zzo">
                             <connections>
-                                <segue destination="puv-by-Onq" kind="presentation" identifier="SettingsTableViewControllerSegue" id="xOt-ST-90R"/>
+                                <segue destination="jLx-lu-vBe" kind="presentation" identifier="SettingsTableViewControllerSegue" id="msF-7E-yfY"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="DD2-Rs-JPu">
                             <connections>
-                                <segue destination="HZr-EM-Emz" kind="presentation" id="rtI-pB-aZE"/>
+                                <segue destination="HZr-EM-Emz" kind="presentation" identifier="AddWeatherCityTableViewControllerSegue" id="rtI-pB-aZE"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -104,7 +104,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rVN-bf-POT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1763.7681159420292" y="900"/>
+            <point key="canvasLocation" x="1738" y="917"/>
         </scene>
         <!--Add City-->
         <scene sceneID="E7G-vx-zfo">
@@ -189,22 +189,22 @@
             <point key="canvasLocation" x="1737.68115942029" y="154.6875"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="cLM-i3-i4F">
+        <scene sceneID="fTW-pa-0nD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="puv-by-Onq" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jLx-lu-vBe" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Yoq-nZ-FDh">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="YhX-MC-O7E">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="C5G-R8-q7e" kind="relationship" relationship="rootViewController" id="8xK-lO-T6T"/>
+                        <segue destination="C5G-R8-q7e" kind="relationship" relationship="rootViewController" id="Qug-3u-6uc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hOu-yy-bfe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Db-yt-iFh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="853.62318840579712" y="900"/>
+            <point key="canvasLocation" x="855" y="917"/>
         </scene>
     </scenes>
 </document>

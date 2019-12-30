@@ -9,9 +9,16 @@
 import Foundation
 import UIKit
 
+protocol SettingsDelegate {
+    
+    func settingsDone(vm: SettingsViewModel)
+}
+
 class SettingsTableViewController: UITableViewController {
     
     private var settingsViewModel = SettingsViewModel()
+    
+    var delegate: SettingsDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +75,11 @@ class SettingsTableViewController: UITableViewController {
     }
     
     @IBAction func onDone() {
+        
+        if let delegate = self.delegate {
+            
+            delegate.settingsDone(vm: self.settingsViewModel)
+        }
         
         self.dismiss(animated: true, completion: nil)
     }
