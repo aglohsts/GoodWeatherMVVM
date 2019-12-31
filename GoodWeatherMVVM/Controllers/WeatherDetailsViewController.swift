@@ -21,7 +21,7 @@ class WeatherDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.cityNameLabel.text = self.weatherViewModel?.name
-        self.currentTemperatureLabel.text = self.weatherViewModel?.currentTemperature.temperature.formatAsDegree
+        self.cityNameLabel.text = self.weatherViewModel?.name.value
+        self.currentTemperatureLabel.text = self.weatherViewModel?.currentTemperature.temperature.value.formatAsDegree
     }
 }

@@ -14,7 +14,7 @@ class WeatherListTableViewController: UITableViewController {
     private struct Segue {
         static let settings = "SettingsTableViewControllerSegue"
         static let addWeatherCity = "AddWeatherCityTableViewControllerSegue"
-        static let weatherDetail = "WeatherDetailsControllerSegue"
+        static let weatherDetail = "WeatherDetailsViewControllerSegue"
     }
     
     private var weatherListViewModel = WeatherListViewModel()
