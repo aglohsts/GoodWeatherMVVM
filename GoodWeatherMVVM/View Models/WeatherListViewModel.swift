@@ -10,7 +10,7 @@ import Foundation
 
 struct WeatherListViewModel {
     
-    private var weatherViewModel: [WeatherViewModel] = []
+    private(set) var weatherViewModel: [WeatherViewModel] = [] // read only, set only in WeatherListViewModel
     
     mutating func addWeatherViewModel(_ vm: WeatherViewModel) {
         self.weatherViewModel.append(vm)
