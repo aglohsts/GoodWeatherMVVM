@@ -12,7 +12,6 @@
 		422B2F8D23B5BC0B00830EC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422B2F8B23B5BC0B00830EC8 /* Main.storyboard */; };
 		422B2F8F23B5BC0D00830EC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 422B2F8E23B5BC0D00830EC8 /* Assets.xcassets */; };
 		422B2F9223B5BC0D00830EC8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422B2F9023B5BC0D00830EC8 /* LaunchScreen.storyboard */; };
-		422B2F9D23B5BC0D00830EC8 /* GoodWeatherMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B2F9C23B5BC0D00830EC8 /* GoodWeatherMVVMTests.swift */; };
 		422B2FA823B5BC0D00830EC8 /* GoodWeatherMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B2FA723B5BC0D00830EC8 /* GoodWeatherMVVMUITests.swift */; };
 		422B2FB723B5ECF700830EC8 /* WeatherListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B2FB623B5ECF700830EC8 /* WeatherListTableViewController.swift */; };
 		422B2FB923B5ED2B00830EC8 /* AddWeatherCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422B2FB823B5ED2B00830EC8 /* AddWeatherCityViewController.swift */; };
@@ -23,6 +22,7 @@
 		426039F923B9E5FC0040FD39 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426039F823B9E5FC0040FD39 /* BindingTextField.swift */; };
 		426039FB23B9FE7C0040FD39 /* WeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426039FA23B9FE7C0040FD39 /* WeatherDetailsViewController.swift */; };
 		426039FD23BD8C3B0040FD39 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426039FC23BD8C3B0040FD39 /* TableViewDataSource.swift */; };
+		42603A2F23BDCC4F0040FD39 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42603A2E23BDCC4F0040FD39 /* SettingsViewModelTests.swift */; };
 		CA1B49C623BC943C009FF907 /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1B49C523BC943C009FF907 /* WeatherDataSource.swift */; };
 		CA1ECF5723B8B1AD00F99BFB /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1ECF5623B8B1AD00F99BFB /* Double+Extension.swift */; };
 		CA67230123B72A89002AC85B /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA67230023B72A89002AC85B /* Webservice.swift */; };
@@ -55,7 +55,6 @@
 		422B2F9123B5BC0D00830EC8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		422B2F9323B5BC0D00830EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		422B2F9823B5BC0D00830EC8 /* GoodWeatherMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeatherMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		422B2F9C23B5BC0D00830EC8 /* GoodWeatherMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherMVVMTests.swift; sourceTree = "<group>"; };
 		422B2F9E23B5BC0D00830EC8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		422B2FA323B5BC0D00830EC8 /* GoodWeatherMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoodWeatherMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		422B2FA723B5BC0D00830EC8 /* GoodWeatherMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodWeatherMVVMUITests.swift; sourceTree = "<group>"; };
@@ -69,6 +68,7 @@
 		426039F823B9E5FC0040FD39 /* BindingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
 		426039FA23B9FE7C0040FD39 /* WeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsViewController.swift; sourceTree = "<group>"; };
 		426039FC23BD8C3B0040FD39 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		42603A2E23BDCC4F0040FD39 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
 		CA1B49C523BC943C009FF907 /* WeatherDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataSource.swift; sourceTree = "<group>"; };
 		CA1ECF5623B8B1AD00F99BFB /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
 		CA67230023B72A89002AC85B /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 		422B2F9B23B5BC0D00830EC8 /* GoodWeatherMVVMTests */ = {
 			isa = PBXGroup;
 			children = (
-				422B2F9C23B5BC0D00830EC8 /* GoodWeatherMVVMTests.swift */,
 				422B2F9E23B5BC0D00830EC8 /* Info.plist */,
+				42603A2E23BDCC4F0040FD39 /* SettingsViewModelTests.swift */,
 			);
 			path = GoodWeatherMVVMTests;
 			sourceTree = "<group>";
@@ -373,7 +373,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				422B2F9D23B5BC0D00830EC8 /* GoodWeatherMVVMTests.swift in Sources */,
+				42603A2F23BDCC4F0040FD39 /* SettingsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
