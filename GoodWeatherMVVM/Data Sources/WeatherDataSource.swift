@@ -20,6 +20,10 @@ class WeatherDataSource: NSObject, UITableViewDataSource {
         self.weatherListViewModel = weatherListViewModel
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return weatherListViewModel.weatherViewModel.count
     }
